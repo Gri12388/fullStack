@@ -3,6 +3,6 @@ const path = require('path');
 
 const app = express();
 
-app.use('/', express.static(path.join(__dirname, 'static')));
+app.use('/', express.static(path.join(__dirname, 'static', 'dist')));
 
 app.listen(5000, () => console.log(`Server has been started...`));
